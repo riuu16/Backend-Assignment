@@ -17,6 +17,10 @@ app.use("/api/user/", userRoutes);
 app.use("/uploads", express.static("uploads"));
 app.use("/api/payment/", paymentRouter);
 
+app.get("/",(req,res)=>{
+  res.send("applive")
+})
+
 const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
