@@ -42,8 +42,8 @@ async function sendEmailOTP(email, otp) {
     host: "smtp.ethereal.email",
     port: 587,
     auth: {
-      user: "arnold.marquardt@ethereal.email",
-      pass: "spTjxvWBPV5A6qyJ9X",
+      user: "korbin25thereal.email",
+      pass: "UanAHRwhhJ8wJ9DBQW",
     },
     tls: {
       // do not fail on invalid certs
@@ -52,7 +52,7 @@ async function sendEmailOTP(email, otp) {
   });
 
   let details = {
-    from: "arnold.marquardt@ethereal.email",
+    from: "korbin25thereal.email",
     to: email,
     subject: "One Time Password",
     text: `OTP : ${otp}`,
